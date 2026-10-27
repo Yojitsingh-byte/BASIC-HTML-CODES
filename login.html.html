@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Login Page</title>
+    <script>
+        function validateLogin() {
+            var user = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+
+            if (user === "" || pass === "") {
+                alert("Please enter both Username and Password!");
+                return false;
+            } else if (user === "admin" && pass === "12345") {
+                alert("Login Successful! Welcome " + user);
+                return true;
+            } else {
+                alert("Invalid Username or Password!");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Login with JavaScript Validation</h2>
+    <form onsubmit="return validateLogin()">
+        <label>Username:</label><br>
+        <input type="text" id="username"><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" id="password"><br><br>
+
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>

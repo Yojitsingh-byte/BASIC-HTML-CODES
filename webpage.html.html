@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors and Fonts</title>
+    <style>
+        /* (a) & (c) Page-level selector with background and font */
+        body {
+            background-color: #f0f4f8;
+            background-image: url('page-bg.jpg'); /* Background for entire page */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Element Selector */
+        h1 {
+            color: navy;
+            font-family: 'Georgia', serif;
+            font-style: italic;
+        }
+
+        /* Class Selector (different font, style, and color) */
+        .custom-text {
+            color: darkslategray;
+            font-family: 'Courier New', monospace;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* ID Selector + (c) Background for a single element on the page */
+        #special-box {
+            background-color: #ffeaa7;
+            background-image: url('element-bg.jpg');
+            color: maroon;
+            padding: 15px;
+            border: 2px solid maroon;
+        }
+    </style>
+</head>
+<body>
+    <!-- (b) Referring to the selectors in the body -->
+    <h1>Main Heading (Element Selector)</h1>
+    
+    <p class="custom-text">This paragraph uses a Class Selector with Courier New font.</p>
+    
+    <div id="special-box">
+        This box uses an ID Selector and has its own single-element background!
+    </div>
+</body>
+</html>
